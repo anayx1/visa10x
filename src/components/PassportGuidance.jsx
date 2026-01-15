@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import passportVideo from "../assets/images/videos/passport.mp4";
 import "./PassportGuidance.css";
 
 const textVariants = {
@@ -141,7 +142,7 @@ const PassportGuidance = () => {
         <motion.div className="passport-image">
           <div className="passport-visual">
             <video
-              src="/src/assets/images/videos/passport.mp4"
+              src={passportVideo}
               autoPlay
               loop
               muted

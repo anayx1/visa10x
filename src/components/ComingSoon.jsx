@@ -3,6 +3,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import "./ComingSoon.css";
 
+import comingSoonImg from "../assets/images/png/comingsoon.png";
+
 const ComingSoon = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -17,7 +19,7 @@ const ComingSoon = () => {
           transition={{ duration: 0.7 }}
         >
           <div className="coming-soon-image">
-            <img src="/src/assets/images/png/comingsoon.png" alt="Coming" />
+            <img src={comingSoonImg} alt="Coming" />
           </div>
         </motion.div>
       </div>

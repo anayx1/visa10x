@@ -3,6 +3,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import "./StructuredGuidance.css";
 
+import structuredGuidanceImg from "../assets/images/png/structured-guidance-man.png";
+
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -22,7 +24,7 @@ const StructuredGuidance = () => {
         <motion.div className="structured-image">
           <div className="structured-image-wrapper">
             <img
-              src="/src/assets/images/png/structured-guidance-man.png"
+              src={structuredGuidanceImg}
               alt="Structured Guidance Consultant"
               className="structured-guidance-img"
             />
