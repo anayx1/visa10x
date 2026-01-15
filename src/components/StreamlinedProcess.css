@@ -1,0 +1,142 @@
+.streamlined-process {
+  background: var(--navy);
+  padding: 6rem 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.process-title {
+  color: white;
+  font-weight: 800;
+  margin: 5px 0;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+}
+
+.process-subtitle {
+  color: var(--border-gray);
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 3rem;
+  margin-bottom: 4rem;
+}
+
+.step-card {
+  background: rgb(245, 247, 250);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.step-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.step-icon {
+  width: 28px;
+  height: 28px;
+  padding: 15px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.step-number-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.step-number {
+  color: var(--navy);
+}
+
+.step-description {
+  font-size: 18px;
+  color: var(--navy);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.process-footer {
+  text-align: center;
+}
+
+.process-note {
+  font-size: 0.9rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .streamlined-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .process-title {
+    font-size: 2.2rem;
+  }
+
+  .process-subtitle-box {
+    padding: 1rem 1.5rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .step-number-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-start {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}

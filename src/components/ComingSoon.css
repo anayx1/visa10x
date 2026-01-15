@@ -1,0 +1,23 @@
+
+
+.coming-soon-container {
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.coming-soon-content {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.coming-soon-image{
+  width: 100%;
+  height: 800px;
+}
+
+.coming-soon-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

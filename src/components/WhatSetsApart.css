@@ -1,0 +1,196 @@
+.what-sets-apart {
+  background: var(--light-gray);
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.sets-apart-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sets-apart-header {
+  text-align: center;
+}
+
+.sets-apart-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.sets-apart-subtitle {
+  font-size: 18px;
+  color: var(--border-gray);
+  line-height: 1.6em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  text-align: start;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.carousel-btn {
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.what-sets-apart {
+  background: var(--light-gray);
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.sets-apart-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sets-apart-header {
+  text-align: center;
+}
+
+/* Title & subtitle stay same */
+.sets-apart-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.sets-apart-subtitle {
+  font-size: 18px;
+  color: var(--border-gray);
+  line-height: 1.6em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  text-align: start;
+}
+
+/* Swiper wrapper */
+.sets-apart-swiper {
+  padding: 1rem 0;
+  overflow: hidden; /* ✅ allows 3.5 slides */
+  display: flex;
+}
+
+/* Card */
+.feature-card {
+  height: 100%;
+  min-height: 450px;
+  width: 240px;
+  max-width: 240px;
+  padding: 2rem 2rem 0 2rem;
+  background: var(--light-blue);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Content */
+.feature-icon {
+  height: 274px;
+  width: 238px;
+  font-size: 4rem;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  filter: grayscale(1);
+}
+
+.feature-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--navy);
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-btn {
+  background: var(--gold);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .what-sets-apart {
+    padding: 4rem 1.5rem;
+  }
+
+  .sets-apart-title {
+    font-size: 2rem;
+  }
+
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+  }
+}
+

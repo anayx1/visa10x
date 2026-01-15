@@ -1,0 +1,269 @@
+.contact {
+  background: white;
+  padding: 6rem 3rem;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-title {
+  text-align: left;
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  margin: 5px 0;
+}
+
+.contact-info-box {
+  margin-top: 20px;
+}
+
+.contact-question {
+  color: var(--border-gray);
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  letter-spacing: -0.04em;
+  font-family: "Geist", sans-serif;
+  text-align: left;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0rem;
+  align-items: stretch;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.contact-card {
+  background: var(--gold);
+  border-radius: 16px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.contact-card:hover {
+  background: var(--light-blue);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card-content {
+  flex: 1;
+}
+
+.contact-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.contact-card-text {
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.contact-card-btn {
+  background: white;
+  color: var(--gold);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-card-btn {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+.contact-form-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 0 2.5rem;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  font-family: "Geist", sans-serif;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.9rem 0;
+  border: none;
+  border-bottom: 1px solid var(--border-gray);
+  border-radius: 0;
+  background: transparent;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--navy);
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-bottom-color: var(--navy);
+  box-shadow: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+.btn-submit {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 0.2rem 0.2rem 0.2rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid navy;
+}
+
+.btn-submit:hover {
+  background: #ffffff;
+  color: var(--navy);
+}
+
+.btn-arrow {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--gold);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.btn-submit:hover .btn-arrow {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .contact-info-box {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,159 @@
+.passport-guidance {
+  background: white;
+  padding: 3rem 2rem;
+}
+
+.passport-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem;
+  align-items: center;
+}
+
+.passport-box {
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+}
+
+.passport-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.title-navy {
+  color: var(--navy);
+}
+
+.title-gold {
+  color: var(--gold);
+}
+
+.passport-description {
+  font-size: 1rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.services-list {
+  margin-bottom: 2.5rem;
+}
+
+.services-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bullet-icon {
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+
+.services-ordered {
+  list-style: none;
+  counter-reset: service-counter;
+  padding-left: 0;
+}
+
+.services-ordered li {
+  counter-increment: service-counter;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.services-ordered li::before {
+  content: counter(service-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: var(--text-gray);
+}
+
+.passport-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passport-visual {
+  width: 100%;
+  max-width: 538px;
+  height: 712px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-btn.min-width{
+  min-width: 280px;
+}
+
+@media (max-width: 1024px) {
+  .passport-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .passport-title {
+    font-size: 2.3rem;
+  }
+
+  .passport-visual {
+    height: 400px;
+  }
+
+  .suitcase-illustration {
+    width: 250px;
+    height: 250px;
+  }
+
+  .suitcase-illustration::before {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .passport-guidance {
+    padding: 4rem 1.5rem;
+  }
+
+  .passport-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .passport-title {
+    font-size: 1.9rem;
+  }
+
+  .passport-description {
+    font-size: 0.95rem;
+  }
+
+  .passport-visual {
+    height: 350px;
+  }
+
+  .suitcase-illustration {
+    width: 200px;
+    height: 200px;
+  }
+
+  .suitcase-illustration::before {
+    font-size: 6rem;
+  }
+}
