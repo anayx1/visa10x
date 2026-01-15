@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Footer.css";
-import Logo from "../assets/images/png/newlogo.png";
+import Logo from "../assets/images/png/logo10xvisa.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
